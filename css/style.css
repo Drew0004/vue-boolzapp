@@ -23,14 +23,27 @@
     background-repeat: no-repeat;
 }
 
+
 ul{
     list-style: none;
     padding: 0;
 }
 
+
+
 /* 
     general 
 */
+.my-h-40{
+    height: 40%;
+}
+.my-h-20{
+    height: 20%;
+}
+
+.my-h-90{
+    height: 90vh;
+}
 
 .my-min-height{
     min-height: 700px;
@@ -92,6 +105,10 @@ ul{
 
 .fs-sm{
     font-size: 0.5em;
+}
+
+.overflow-auto{
+    overflow: auto;
 }
 /* 
     header 

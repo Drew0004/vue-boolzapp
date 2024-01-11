@@ -33,16 +33,16 @@
             <div class="container">
                 
                 <div class="row">
-                    <div class="col-12 p-0  mt-5 border bg-primary my-min-height">
+                    <div class="col-12 p-0  mt-5 border bg-primary my-h-90">
                         
-                        <div class="row g-0">
-                            <!-- Sezione colonna contatti -->
-                            <div class="col-4 bg-danger my-min-height">
+                        <div class="row h-100 g-0">
+                            <!------------------ Sezione colonna contatti ------------------>
+                            <div class="col-4 h-100  bg-danger my-min-height">
                                 
                                 <!-- Header contatti -- SOFIA -->
-                                <header>
+                                <header class="h-25">
                                     <div class="row g-0">
-                                        <div class="col-12 d-flex justify-content-between align-items-center p-2 header-bg">
+                                        <div class="col-12 my-h-40 d-flex justify-content-between align-items-center p-4 header-bg">
                                             <!-- User -->
                                             <div>
                                                 <div class="container-rounded-img d-inline-block ">
@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
                                     <!-- Ligthblue bell section -->
-                                    <div class="col-12  d-flex align-items-center p-2 notifications-bg my-min-height-50">
+                                    <div class="col-12 my-h-40 d-flex align-items-center p-4 notifications-bg my-min-height-50">
                                         <!-- Bell icon -->
                                         <div class="container-rounded-img bg-white d-flex justify-content-center align-items-center">
                                             <i class="notifications-color fa-solid fa-bell-slash"></i>
@@ -70,168 +70,204 @@
                                             <a class="fs-em mb-0 gray-color text-decoration-underline" href="#nogo">Attiva notifiche Desktop</a>
                                         </div>
                                     </div>
+                                    <!-- Searchbar -->
+                                
+                                    <div class="col-12 my-h-20 bg-white p-2">
+                                        <button class="search-button px-2 ">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <input class="search-input ps-3" placeholder="Cerca o inizia una nuova chat" type="text">
+                                    </div>
+                                
                                 </header>
 
                                 <!-- Sezione lista contatti -->
-                                <main>
-                                    
-                                    <!-- Searchbar -->
-                                    <div class="row g-0">
-                                        <div class="col-12 bg-white p-2">
-                                            <button class="search-button px-2 ">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                            </button>
-                                            <input class="search-input ps-3" placeholder="Cerca o inizia una nuova chat" type="text">
-                                        </div>
-                                    </div>
+                                <main class="h-75 ">
+                                
                                     
                                     <!-- Lista contatti -->
-                                    <div class="col-12 bg-white py-3 my-min-height-100">
-                                        <ul>
-                                            <!-- User 1 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_1.jpg" alt="Michele">
+                                    <div class="row h-100 g-0">
+                                        <div class="col-12 bg-white py-3 h-100">
+                                            <ul class="h-100 overflow-auto">
+                                                <!-- User 1 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_1.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Michele</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
                                                         </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Michele</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 2 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_2.jpg" alt="Michele">
-                                                        </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Fabio</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 3 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_3.jpg" alt="Michele">
+                                                </li>
+                                                <!-- User 2 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_2.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Fabio</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
                                                         </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Samuele</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 4 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_4.jpg" alt="Michele">
-                                                        </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Alessandro B.</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 5 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_5.jpg" alt="Michele">
+                                                </li>
+                                                <!-- User 3 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_3.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Samuele</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
                                                         </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Alessandro L.</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 6 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_6.jpg" alt="Michele">
-                                                        </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Claudia</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 7 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_7.jpg" alt="Michele">
+                                                </li>
+                                                <!-- User 4 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_4.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Alessandro B.</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
                                                         </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Federico</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- User 8 -->
-                                            <li class="mb-2 ps-3 border-bottom">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <div class="container-rounded-img d-inline-block ">
-                                                            <img class="w-100 img-rounded" src="img/avatar_8.jpg" alt="Michele">
-                                                        </div>
-                                                        <div class="ms-3">
-                                                            <h2 class="fs-5 mb-2">Davide</h2>
-                                                            <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                </li>
+                                                <!-- User 5 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_5.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Alessandro L.</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                                <!-- User 6 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_6.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Claudia</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- User 7 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_7.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Federico</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- User 8 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_8.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Davide</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- User 8 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_8.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Davide</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- User 8 -->
+                                                <li class="mb-2 ps-3 border-bottom">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mb-2">
+                                                            <div class="container-rounded-img d-inline-block ">
+                                                                <img class="w-100 img-rounded" src="img/avatar_8.jpg" alt="Michele">
+                                                            </div>
+                                                            <div class="ms-3">
+                                                                <h2 class="fs-5 mb-2">Davide</h2>
+                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 
                                 </main>
                             
                             </div>
                             
-                            <!-- Sezione Chat -->
+                            <!----------------- Sezione Chat ----------------->
                             <div class="col-8  border bg-warning my-min-height">
 
                                 <div class="row h-100 g-0 ">
@@ -256,6 +292,11 @@
         <script type="text/javascript" src="js/scripts.js"></script>
     </body>
 </html>
+                                
+                            
+                            
+
+
                                 
                             
                             
