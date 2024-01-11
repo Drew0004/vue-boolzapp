@@ -10,6 +10,7 @@
 :root{
     --color-whatsapp: #009688;
     --soft-gray:rgb(241, 241, 241);
+    --header-bg: #EAEAEA;
 }
 .bg {
     width: 100vw;
@@ -53,6 +54,23 @@
     border:1px solid var(--soft-gray);
 }
 
+.container-rounded-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.img-rounded{
+    border-radius: 50%;
+}
+
+.gray-color{
+    color: gray;
+}
+
+.header-bg{
+    background-color: var(--header-bg);
+}
 
 /* 
     header 
