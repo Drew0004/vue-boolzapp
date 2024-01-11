@@ -12,6 +12,7 @@
     --soft-gray:rgb(241, 241, 241);
     --header-bg: #EAEAEA;
     --notifications-color:#8EDAFC;
+    --footer-color:#F3EEEA;
 }
 .bg {
     width: 100vw;
@@ -29,6 +30,14 @@ ul{
     padding: 0;
 }
 
+.bg-chat{
+    background-image: url("../img/mine.jpg");
+}
+
+.bg-footer{
+    background-color: var(--footer-color);
+}
+
 
 
 /* 
@@ -40,8 +49,17 @@ ul{
 .my-h-20{
     height: 20%;
 }
-
+.my-h-10{
+    height: 10%;
+}
+.my-h-80{
+    height: 80%;
+}
 .my-h-90{
+    height: 90%;
+}
+
+.my-vh-90{
     height: 90vh;
 }
 
