@@ -7,7 +7,18 @@
     padding: 0;
     box-sizing: border-box;
 } */
-
+:root{
+    --color-whatsapp: #009688;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, var(--color-whatsapp), var(--color-whatsapp));
+    background-size: 100% 15%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 /* 
     general 
 */
