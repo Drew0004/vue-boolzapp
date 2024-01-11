@@ -23,6 +23,11 @@
     background-repeat: no-repeat;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 /* 
     general 
 */
@@ -83,6 +88,10 @@
 
 .fs-em{
     font-size: 0.8em;
+}
+
+.fs-sm{
+    font-size: 0.5em;
 }
 /* 
     header 
