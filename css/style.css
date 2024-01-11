@@ -11,6 +11,7 @@
     --color-whatsapp: #009688;
     --soft-gray:rgb(241, 241, 241);
     --header-bg: #EAEAEA;
+    --notifications-color:#8EDAFC;
 }
 .bg {
     width: 100vw;
@@ -72,6 +73,17 @@
     background-color: var(--header-bg);
 }
 
+.notifications-bg{
+    background-color: var(--notifications-color);
+}
+
+.notifications-color{
+    color: var(--notifications-color);
+}
+
+.fs-em{
+    font-size: 0.8em;
+}
 /* 
     header 
 */
