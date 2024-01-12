@@ -133,12 +133,14 @@ ul{
 }
 
 .message{
+    width: 50%;
     border-radius: 15px;
     padding: 15px;
 }
 
 .sent{
     background-color: #D5F9BA;
+    margin-left: auto;
 
 }
 
@@ -150,6 +152,10 @@ ul{
     position: absolute;
     bottom: 5px;
     right: 10px;
+}
+
+.c-point{
+    cursor: pointer;
 }
 
 

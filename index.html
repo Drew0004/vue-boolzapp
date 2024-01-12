@@ -92,7 +92,7 @@
                                                 <!-- User 1 -->
                                                 <li v-for="(contact, i) in contacts"
                                                     @click="clickActiveContact(i)" 
-                                                    class="mb-2 py-2 ps-3 border-bottom" 
+                                                    class="mb-2 c-point py-2 ps-3 border-bottom" 
                                                     :class="i == activeContact ? 'active' : '' ">
                                                     <div class="d-flex justify-content-between">
                                                         <div class="d-flex align-items-center mb-2">
@@ -147,14 +147,16 @@
                                     </div>
                                     
                                     <!-- Chat -->
-                                    <div class="flex-grow-1  overflow-y-auto bg-chat">
+                                    <div class="flex-grow-1 px-3 overflow-y-auto bg-chat">
+
                                         <div
                                             v-for="(singleChat , j) in contacts[activeContact].messages"
-                                            class="col-6 offset-5 my-3 message position-relative"
+                                            class="my-3 message position-relative"
                                             :class="singleChat.status == 'sent' ? 'sent' : 'received' ">
                                             <h2 class="fs-6">{{singleChat.message}}</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>
                                         </div>
+
                                         <!-- <div class="col-6 offset-5  mb-2 message sent position-relative">
                                             <h2 class="fs-6">Ricordati di stendere i panni</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>

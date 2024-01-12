@@ -177,25 +177,32 @@ createApp({
         },
 
         createNewMessage(){
-            let newMessageObject = {
-                message: this.newMessage,
-                status:'sent'
+            if(this.newMessage.trim().length > 0){
+                let newMessageObject = {
+                    date:'10/01/2020 15:51:00',
+                    message: this.newMessage,
+                    status:'sent',
+                    
+                }
+                this.contacts[this.activeContact].messages.push(newMessageObject);
+                console.log(newMessageObject);
+                this.newMessage = ''
+    
+                let timeout;
+    
+                timeout = setTimeout(() => {
+                    let newMessageAutoObject = {
+                        date:'10/01/2020 15:51:00',
+                        message:'Ok!',
+                        status:'received',
+                        
+                    };
+    
+    
+                    this.contacts[this.activeContact].messages.push(newMessageAutoObject);
+                }, 1000);
+
             }
-            this.contacts[this.activeContact].messages.push(newMessageObject);
-            console.log(newMessageObject);
-            this.newMessage = ''
-
-            let timeout;
-
-            timeout = setTimeout(() => {
-                let newMessageAutoObject = {
-                    message:'Ok!',
-                    status:'received'
-                };
-
-
-                this.contacts[this.activeContact].messages.push(newMessageAutoObject);
-            }, 1000);
         },
 
 
