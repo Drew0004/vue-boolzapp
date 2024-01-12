@@ -92,28 +92,33 @@
                                     <!-- Lista contatti -->
                                     <div class="row h-100 g-0">
                                         <div class="col-12 bg-white h-100">
-                                            <ul class="h-100 overflow-auto">
+                                            <div class="h-100 overflow-auto">
                                                 <!-- User 1 -->
-                                                <li v-for="(contact, i) in contacts"
-                                                    @click="clickActiveContact(i)" 
-                                                    class="mb-2 c-point py-2 ps-3 border-bottom" 
-                                                    :class="i == activeContact ? 'active' : '' ">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="d-flex align-items-center mb-2">
-                                                            <div class="container-rounded-img d-inline-block ">
-                                                                <img class="w-100 img-rounded" :src="contact.avatar" :alt="contact.name">
-                                                            </div>
-                                                            <div class="ms-3">
-                                                                <h2 class="fs-5 mb-2">{{contact.name}}</h2>
-                                                                <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
-                                                            </div>
-                                                        </div>
+                                                <div v-for="(contact, i) in contacts">
+                                                    <div 
+                                                        @click="clickActiveContact(i)" 
+                                                        class="mb-2 c-point py-2 ps-3 border-bottom" 
+                                                        :class="i == activeContact ? 'active' : '' "
+                                                        v-if="contact.visible === true">
                                                         <div>
-                                                            <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="d-flex align-items-center mb-2">
+                                                                    <div class="container-rounded-img d-inline-block ">
+                                                                        <img class="w-100 img-rounded" :src="contact.avatar" :alt="contact.name">
+                                                                    </div>
+                                                                    <div class="ms-3">
+                                                                        <h2 class="fs-5 mb-2">{{contact.name}}</h2>
+                                                                        <h2 class="fs-em gray-color">Ultimo messaggio inviato</h2>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <h2 class="fs-em me-2 gray-color">12:00</h2>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </li>
-                                            </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 

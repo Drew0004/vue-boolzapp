@@ -169,7 +169,6 @@ createApp({
                 ],
             }
         ],
-        backupContacts: []
         
     }
   },
@@ -207,19 +206,12 @@ createApp({
             }
         },
         searchChat(){
-            this.contacts = [...this.backupContacts]
-
-            const newSearchContact = this.searchContact.toLowerCase();
-
-            this.contacts = this.contacts.filter((contact) =>
-            contact.name.toLowerCase().includes(newSearchContact)
-            )
+            for(let i = 0; i < this.contacts.length; i++){
+                this.contacts[i].visible = this.contacts[i].name.toLowerCase().includes(this.searchContact)
+            }
 
         },
-	},
-    mounted(){
-        this.backupContacts = [...this.contacts]
-    }
+	}
 }).mount('#app')
 
             
