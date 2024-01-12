@@ -148,6 +148,10 @@ ul{
     background-color: #FFFFFF;
 }
 
+.my-shrink-1{
+    flex-shrink: 1;
+}
+
 .absolute-hour{
     position: absolute;
     bottom: 5px;
