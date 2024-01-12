@@ -24,6 +24,10 @@
     background-repeat: no-repeat;
 }
 
+.active{
+    background-color: #EAEBEB;
+}
+
 
 ul{
     list-style: none;
