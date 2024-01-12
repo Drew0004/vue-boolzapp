@@ -150,7 +150,7 @@
                                     <div class="flex-grow-1  overflow-y-auto bg-chat">
                                         <div
                                             v-for="(singleChat , j) in contacts[activeContact].messages"
-                                            class="col-6 offset-5 mb-2 message position-relative"
+                                            class="col-6 offset-5 my-3 message position-relative"
                                             :class="singleChat.status == 'sent' ? 'sent' : 'received' ">
                                             <h2 class="fs-6">{{singleChat.message}}</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>
@@ -172,7 +172,7 @@
                                     <!-- Footer della chat -->
                                     <div class="p-4 d-flex flex-shrink-0 justify-content-center align-items-center justify-content-between bg-footer">
                                         <i class="fs-5  gray-color fa-regular fa-face-smile"></i> 
-                                        <input class="fs-5 h-50px rounded search-input ps-3" placeholder="Scrivi un messaggio" type="text">
+                                        <input @keyup.enter="createNewMessage()" v-model="newMessage" class="fs-5 h-50px rounded search-input ps-3" placeholder="Scrivi un messaggio" type="text">
                                         <i class="fs-5 gray-color fa-solid fa-microphone"></i>
                                     </div>
                                 </div>
