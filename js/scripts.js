@@ -183,7 +183,22 @@ createApp({
             }
             this.contacts[this.activeContact].messages.push(newMessageObject);
             console.log(newMessageObject);
-        }
+            this.newMessage = ''
+
+            let timeout;
+
+            timeout = setTimeout(() => {
+                let newMessageAutoObject = {
+                    message:'Ok!',
+                    status:'received'
+                };
+
+
+                this.contacts[this.activeContact].messages.push(newMessageAutoObject);
+            }, 1000);
+        },
+
+
 	}
 }).mount('#app')
 	
