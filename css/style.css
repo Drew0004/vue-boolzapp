@@ -43,6 +43,9 @@ ul{
 /* 
     general 
 */
+.h-70px{
+    height: 70px;
+}
 .my-h-40{
     height: 40%;
 }
@@ -125,10 +128,6 @@ ul{
     font-size: 0.5em;
 }
 
-.overflow-auto{
-    overflow: auto;
-}
-
 .message{
     border-radius: 15px;
     padding: 15px;
@@ -148,6 +147,7 @@ ul{
     bottom: 5px;
     right: 10px;
 }
+
 
 
 /* 
