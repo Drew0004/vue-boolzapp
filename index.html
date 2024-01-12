@@ -80,7 +80,7 @@
                                         <button class="search-button px-2 ">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
-                                        <input class="search-input ps-3" placeholder="Cerca o inizia una nuova chat" type="text">
+                                        <input class="search-input ps-3" @keyup="searchChat()" v-model="searchContact" placeholder="Cerca o inizia una nuova chat" type="text">
                                     </div>
                                 
                                 </header>

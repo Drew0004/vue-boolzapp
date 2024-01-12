@@ -5,6 +5,7 @@ createApp({
     return {
         activeContact: 0,
         newMessage: '',
+        searchContact: '',
 		contacts: [
             {
                 name: 'Michele',
@@ -167,7 +168,8 @@ createApp({
                     }
                 ],
             }
-        ]
+        ],
+        backupContacts: []
         
     }
   },
@@ -204,8 +206,22 @@ createApp({
 
             }
         },
+        searchChat(){
+            this.contacts = [...this.backupContacts]
 
+            const newSearchContact = this.searchContact.toLowerCase();
 
-	}
+            this.contacts = this.contacts.filter((contact) =>
+            contact.name.toLowerCase().includes(newSearchContact)
+            )
+
+        },
+	},
+    mounted(){
+        this.backupContacts = [...this.contacts]
+    }
 }).mount('#app')
+
+            
+
 	
