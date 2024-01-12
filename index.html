@@ -90,7 +90,8 @@
                                         <div class="col-12 bg-white h-100">
                                             <ul class="h-100 overflow-auto">
                                                 <!-- User 1 -->
-                                                <li v-for="(contact, i) in contacts" 
+                                                <li v-for="(contact, i) in contacts"
+                                                    @click="clickActiveContact(i)" 
                                                     class="mb-2 py-2 ps-3 border-bottom" 
                                                     :class="i == activeContact ? 'active' : '' ">
                                                     <div class="d-flex justify-content-between">
@@ -130,10 +131,10 @@
                                         <!-- User -->
                                         <div class="d-flex align-items-center">
                                             <div class="container-rounded-img d-inline-block ">
-                                                <img class="w-100 img-rounded" src="img/avatar_1.jpg" alt="Michele">
+                                                <img class="w-100 img-rounded" :src="contacts[activeContact].avatar" :alt="contacts[activeContact].name">
                                             </div>
                                             <div class="ms-3">
-                                                <h2 class="fs-5 mb-1">Michele</h2>
+                                                <h2 class="fs-5 mb-1">{{contacts[activeContact].name}}</h2>
                                                 <h2 class="fs-em gray-color">Ultimo accesso oggi alle 12:00</h2>
                                             </div>
                                         </div>
@@ -146,12 +147,15 @@
                                     </div>
                                     
                                     <!-- Chat -->
-                                    <div class="flex-grow-1 overflow-y-auto bg-chat">
-                                        <div class="col-6 offset-5  mb-2 message sent position-relative">
-                                            <h2 class="fs-6">Hai portato a spasso il cane?</h2>
+                                    <div class="flex-grow-1  overflow-y-auto bg-chat">
+                                        <div
+                                            v-for="(singleChat , j) in contacts[activeContact].messages"
+                                            class="col-6 offset-5 mb-2 message position-relative"
+                                            :class="singleChat.status == 'sent' ? 'sent' : 'received' ">
+                                            <h2 class="fs-6">{{singleChat.message}}</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>
                                         </div>
-                                        <div class="col-6 offset-5  mb-2 message sent position-relative">
+                                        <!-- <div class="col-6 offset-5  mb-2 message sent position-relative">
                                             <h2 class="fs-6">Ricordati di stendere i panni</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>
                                         </div>
@@ -162,8 +166,8 @@
                                         <div class="col-6 offset-5  mb-2 message sent position-relative">
                                             <h2 class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias officiis harum assumenda soluta aut, fugit exercitationem velit maiores, temporibus delectus vero! Aut laborum repudiandae labore, quibusdam illum ipsa, animi ipsam alias cupiditate possimus vel natus beatae! Voluptate, voluptatem possimus cumque incidunt necessitatibus in animi ex, quasi consequatur error eum, ducimus distinctio porro quisquam quod similique nam vero impedit non eaque beatae deleniti. Ab nemo sed aliquam, ratione expedita vero? Officia sapiente ex maiores neque nulla reprehenderit recusandae? Nemo soluta fuga ad! Laboriosam omnis officiis eius error asperiores quasi, quaerat neque modi rem tempora qui placeat labore vitae, nobis ullam.</h2>
                                             <h4 class="fs-sm gray-color absolute-hour">12:00</h4>
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                    </div> 
                                     
                                     <!-- Footer della chat -->
                                     <div class="p-4 d-flex flex-shrink-0 justify-content-center align-items-center justify-content-between bg-footer">
@@ -184,7 +188,8 @@
         </div>
         
         <!-- Link bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+        
         <!-- Link JavaScript -->
         <script type="text/javascript" src="js/scripts.js"></script>
     </body>

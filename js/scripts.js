@@ -171,8 +171,9 @@ createApp({
     }
   },
 	methods: {
-		funzione(){
-			//funzione
-	}
+        clickActiveContact(indexContact){
+            this.activeContact = indexContact;
+        }
 	}
 }).mount('#app')
+	
