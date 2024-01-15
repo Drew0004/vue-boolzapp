@@ -162,14 +162,38 @@ ul{
 
 .absolute-hour{
     position: absolute;
-    bottom: 5px;
-    right: 10px;
+    bottom: 3px;
+    right: 20px;
 }
 
 .c-point{
     cursor: pointer;
 }
 
+.toggle-absolute{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: gray;
+}
+
+.my-d-none{
+    display: none;
+}
+
+.message:hover .toggle-absolute{
+    display: block;
+}
+
+.my-dropdown{
+    background-color: white;
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 1;
+}
 
 
 /* 
