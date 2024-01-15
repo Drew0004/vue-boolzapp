@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
         activeContact: 0,
+        activeDropdown: null,
         newMessage: '',
         searchContact: '',
 		contacts: [
@@ -175,6 +176,7 @@ createApp({
 	methods: {
         clickActiveContact(indexContact){
             this.activeContact = indexContact;
+            this.activeDropdown = null;
         },
 
         createNewMessage(){
@@ -210,6 +212,18 @@ createApp({
                 this.contacts[i].visible = this.contacts[i].name.toLowerCase().includes(this.searchContact)
             }
 
+        },
+        showDropdown(index){
+            // console.log('cliccato', index);
+            if(this.activeDropdown == null){
+                this.activeDropdown = index;
+            }else{
+                this.activeDropdown = null;
+            }
+            
+        },
+        manageDropDown(index){
+            this.contacts[this.activeContact].messages.splice(index, 1);
         },
 	}
 }).mount('#app')
