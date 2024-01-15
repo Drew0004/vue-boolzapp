@@ -225,7 +225,22 @@ createApp({
         manageDropDown(index){
             this.contacts[this.activeContact].messages.splice(index, 1);
         },
-	}
+        splitHourMessage(i) {
+            let dateOfSingleMessage = this.contacts[this.activeContact].messages[i].date;
+            let divide = dateOfSingleMessage.split(" ");
+            let soloOra = divide[1].split(":").slice(0, 2).join(":");
+      
+            return soloOra;
+        },
+          splitHourContactList(i, messageIndex) {
+            let dateOfSingleMessage = this.contacts[i].messages[messageIndex].date;
+            let divide = dateOfSingleMessage.split(" ");
+            let soloOra = divide[1].split(":").slice(0, 2).join(":");
+      
+            return soloOra;
+        },
+        
+    }
 }).mount('#app')
 
             

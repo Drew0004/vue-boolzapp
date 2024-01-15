@@ -112,7 +112,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div>
-                                                                    <h2 class="fs-em me-2 gray-color">{{contact.messages[contact.messages.length - 1].date}}</h2>
+                                                                    <h2 v-if="contact.messages.length > 0" class="fs-em me-2 gray-color">{{splitHourContactList(i, contact.messages.length -1)}}</h2>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -163,7 +163,7 @@
                                             class="my-4 message position-relative"
                                             :class="singleChat.status == 'sent' ? 'sent' : 'received' ">
                                             <h2 class="fs-6">{{singleChat.message}}</h2>
-                                            <h4 class="fs-sm gray-color absolute-hour">{{singleChat.date}}</h4>
+                                            <h4 class="fs-sm gray-color absolute-hour">{{splitHourMessage(j)}}</h4>
                                             <i @click="showDropdown(j)" class="fa-solid fa-chevron-down my-d-none toggle-absolute"></i>
                                             
                                             <!-- Dropdown -->
