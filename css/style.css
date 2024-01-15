@@ -24,6 +24,10 @@
     background-repeat: no-repeat;
 }
 
+.c-point:hover{
+    background-color: #EAEBEB;
+}
+
 .active{
     background-color: #EAEBEB;
 }
