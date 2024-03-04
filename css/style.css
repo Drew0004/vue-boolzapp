@@ -15,8 +15,6 @@
     --footer-color:#F3EEEA;
 }
 .bg {
-    width: 100vw;
-    height: 100vh;
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(to right, var(--color-whatsapp), var(--color-whatsapp));
     background-size: 100% 15%;
@@ -46,9 +44,9 @@ ul{
     background-color: var(--footer-color);
 }
 
-.shadow{
+/* .shadow{
     box-shadow: 10px, 10px;
-}
+} */
 
 
 

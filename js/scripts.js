@@ -209,7 +209,7 @@ createApp({
         },
         searchChat(){
             for(let i = 0; i < this.contacts.length; i++){
-                this.contacts[i].visible = this.contacts[i].name.toLowerCase().includes(this.searchContact)
+                this.contacts[i].visible = this.contacts[i].name.toLowerCase().includes(this.searchContact.toLowerCase())
             }
 
         },
